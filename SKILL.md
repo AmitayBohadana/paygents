@@ -1,6 +1,6 @@
 ---
-name: evm-payment-deeplink
-description: Generate EVM payment deeplinks (MetaMask) for native ETH or ERC20 token transfers. Agent creates a link, user taps to approve in wallet. No backend required. Includes on-chain verification.
+name: paygents
+description: AI agent payment skill — generate wallet deeplinks (MetaMask, Trust Wallet), verify transactions on-chain, generate receipts, check balances. No custody, no backend, no API keys. Human approves in their own wallet.
 ---
 
 # EVM Payment Deeplink Skill
