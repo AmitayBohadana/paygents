@@ -88,6 +88,18 @@ scripts/evm-receipt.sh \
   --format markdown
 ```
 
+### 4. Check Wallet Balance
+
+```bash
+# All chains
+scripts/evm-balance.sh --address 0x1234...5678
+
+# Single chain
+scripts/evm-balance.sh --address 0x1234...5678 --chain-id 8453
+```
+
+Returns native + major ERC20 balances (USDC, USDT, WETH, WBTC, DAI) across all supported chains. No API key needed.
+
 ## Supported Wallets
 
 | Wallet | Deeplink Support | Flag |

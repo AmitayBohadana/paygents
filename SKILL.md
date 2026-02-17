@@ -111,6 +111,24 @@ When sending the link, always include:
 3. "Tap to open MetaMask and approve"
 4. "Reject if recipient or amount doesn't match"
 
+### Check Wallet Balance
+
+Query native + major ERC20 balances across all supported chains:
+
+```bash
+# All chains at once
+scripts/evm-balance.sh --address 0x1234...5678
+
+# Single chain
+scripts/evm-balance.sh --address 0x1234...5678 --chain-id 8453
+```
+
+Returns JSON with native balance + USDC, USDT, WETH, WBTC, DAI per chain.
+
+Supported chains: Ethereum, Base, Polygon, Arbitrum, Optimism, BNB Chain, Sepolia, Base Sepolia.
+
+No API key needed — uses public RPCs directly.
+
 ### Generate Receipt
 
 After a transaction is verified, generate a structured receipt:
